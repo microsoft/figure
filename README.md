@@ -6,7 +6,7 @@ This repo contains the code for our paper submitted to NeurIPS'23 and MLG, KDD'2
 
  Unsupervised node representations learnt using contrastive learning-based methods have shown good performance on downstream tasks. However, these methods rely on augmentations that mimic low-pass filters, limiting their performance on tasks requiring different eigen-spectrum parts. This paper presents a simple filter-based augmentation method to capture different parts of the eigen-spectrum. We show significant improvements using these augmentations. Further, we show that sharing the same weights across these different filter augmentations is possible, reducing the computational load. In addition, previous works have shown that good performance on downstream tasks requires high dimensional representations. Working with high dimensions increases the computations, especially when multiple augmentations are involved. We mitigate this problem and recover good performance through lower dimensional embeddings using simple random Fourier feature projections. Our method, FiGURe, achieves an average gain of up to 4.4%, compared to the state-of-the-art unsupervised models, across all datasets in consideration, both homophilic and heterophilic.
 
- ## Reproducing Results
+## Reproducing Results
 
 To reproduce the results presented in the paper, you can utilize the bash scripts available in the `bash_scripts` directory. The bash scripts are further organized into three subdirectories: `32`, `128`, and `512`, representing the results of FiGURe with 32, 128, and 512 dimensions, respectively. To run the scripts, simply cd into the concerned directory and use "bash <filename>".
 
@@ -30,13 +30,11 @@ bash scripts/download_data.sh
 3. Run the bash scripts for a particular dataset and for particular embedding dimensions:
 
 ```bash
-cd scripts/<embedding_dimension>
-bash run_<dataset>.sh
+bash scripts/<embedding_dimension>/run_<dataset>.sh
 
 #For example:
 
-cd scripts/32
-bash run_cora.sh
+bash scripts/32/run_cora.sh
 ```
 
 ## People Involved
