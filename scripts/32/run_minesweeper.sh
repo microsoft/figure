@@ -1,0 +1,1 @@
+python main.py --dataset minesweeper --algorithm figure --lr 0.01 --hid_units 32 --batch_size 2 --sample_size 1750 --logreg_weight_decay 0.001 --logreg_epochs 10000 --logreg_lr 0.5 --alpha_masks 1111 --lr_alphas 1 --alpha_activation none --data_dir graph_datasets --dataset_split 0 --seed 5 --gamma 1 --sparse False

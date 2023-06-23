@@ -1,0 +1,1 @@
+python main.py --dataset roman_empire --algorithm figure --lr 0.001 --hid_units 512 --batch_size 2 --sample_size 1500 --logreg_weight_decay 1 --logreg_epochs 10000 --logreg_lr 0.0001 --alpha_masks 1011 --lr_alphas 0.1 --alpha_activation none --data_dir graph_datasets --dataset_split 0 --seed 5 --gamma 0 --sparse False

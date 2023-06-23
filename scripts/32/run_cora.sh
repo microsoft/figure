@@ -1,0 +1,1 @@
+python main.py --dataset cora --algorithm figure --lr 0.0001 --hid_units 32 --batch_size 2 --sample_size 1750 --logreg_weight_decay 0.1 --logreg_epochs 10000 --logreg_lr 0.015 --alpha_masks 1010 --lr_alphas 0.1 --alpha_activation exp --data_dir graph_datasets --dataset_split 0 --seed 5 --gamma 0.2 --sparse False

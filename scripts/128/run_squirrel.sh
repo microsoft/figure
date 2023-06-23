@@ -1,0 +1,1 @@
+python main.py --dataset squirrel --algorithm figure --lr 0.001 --hid_units 128 --batch_size 2 --sample_size 1500 --logreg_weight_decay 0.1 --logreg_epochs 10000 --logreg_lr 0.0001 --alpha_masks 0110 --lr_alphas 0.5 --alpha_activation none --data_dir graph_datasets --dataset_split 0 --seed 5 --gamma 0.7 --sparse False
