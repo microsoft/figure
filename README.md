@@ -14,20 +14,34 @@ Please note that the bash scripts provided are specifically for the first data s
 
 ## Steps To Run
 
-1. Install the requirements:
+1. Install Anaconda basis this [link](https://www.anaconda.com).
+
+2. Create and activate a conda environment (Note that we use Python 3.10.11):
 
 ```bash
-pip install -r requirements.txt
+conda create -n figure python=3.10.11
+
+conda activate figure
 ```
 
-2. Download the public datasets present in an drive link:
+3. Install the requirements basis the OS you are using:
+
+```bash
+pip install -r <os>_requirements.txt
+
+#For example:
+
+pip install -r linux_requirements.txt
+```
+
+4. Download the public datasets present in an drive link:
 
 ```bash
 cd figure
 bash scripts/download_data.sh
 ```
 
-3. Run the bash scripts for a particular dataset and for particular embedding dimensions:
+5. Run the bash scripts for a particular dataset and for particular embedding dimensions:
 
 ```bash
 bash scripts/<embedding_dimension>/run_<dataset>.sh
