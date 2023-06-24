@@ -36,9 +36,8 @@ pip install -r linux_requirements.txt
 
 4. Download the public datasets present in an drive link:
 
-```bash
-cd figure
-bash scripts/download_data.sh
+```python
+python download_datasets.py
 ```
 
 5. Run the bash scripts for a particular dataset and for particular embedding dimensions:
