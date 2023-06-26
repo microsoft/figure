@@ -40,14 +40,11 @@ pip install -r linux_requirements.txt
 python download_datasets.py
 ```
 
-5. Run the bash scripts for a particular dataset and for particular embedding dimensions:
+5. Run the commands for a particular dataset given in scripts/all_commands.txt (for a particular embedding dimension):
 
 ```bash
-bash scripts/<embedding_dimension>/run_<dataset>.sh
+python main.py --dataset arxiv-year --algorithm figure --lr 0.001 --hid_units 32 --batch_size 1 --sample_size 5000 --logreg_weight_decay 0 --logreg_epochs 10000 --logreg_lr 2 --alpha_masks 1111 --lr_alphas 0.01 --alpha_activation none --data_dir graph_datasets --dataset_split 0 --seed 5 --gamma 0.7 --sparse True
 
-#For example:
-
-bash scripts/32/run_cora.sh
 ```
 
 ## People Involved
