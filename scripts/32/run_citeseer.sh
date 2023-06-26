@@ -1,1 +1,0 @@
-python main.py --dataset citeseer --algorithm figure --lr 0.001 --hid_units 32 --batch_size 2 --sample_size 2250 --logreg_weight_decay 0 --logreg_epochs 10000 --logreg_lr 0.015 --alpha_masks 0001 --lr_alphas 0.0001 --alpha_activation exp --data_dir graph_datasets --dataset_split 0 --seed 5 --gamma 0.1 --sparse False

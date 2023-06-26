@@ -1,1 +1,0 @@
-python main.py --dataset chameleon --algorithm figure --lr 0.01 --hid_units 32 --batch_size 2 --sample_size 2000 --logreg_weight_decay 0.001 --logreg_epochs 10000 --logreg_lr 0.1 --alpha_masks 1100 --lr_alphas 0.5 --alpha_activation exp --data_dir graph_datasets --dataset_split 0 --seed 5 --gamma 0.7 --sparse False
