@@ -77,3 +77,17 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+
+### Citation
+
+Please consider citing the following paper when using our code.
+
+```bibtex
+@inproceedings{mlg2023_15,
+title={FiGURe: Simple and Efficient Unsupervised Node Representations with Filter Augmentations},
+author={Chanakya Ekbote, Ajinkya P. Deshpande, Arun Iyer, Ramakrishna Bairi and Sundararajan Sellamanickam},
+booktitle={Proceedings of the 19th International Workshop on Mining and Learning with Graphs (MLG)},
+year={2023}
+}
+```
