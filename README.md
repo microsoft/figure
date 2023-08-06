@@ -2,6 +2,20 @@
 
 This repo contains the code for our paper submitted to NeurIPS'23 and MLG, KDD'23.
 
+## Citation
+
+Please consider citing the following paper when using our code.
+
+```bibtex
+@inproceedings{mlg2023_15,
+title={FiGURe: Simple and Efficient Unsupervised Node Representations with Filter Augmentations},
+author={Chanakya Ekbote, Ajinkya P. Deshpande, Arun Iyer, Ramakrishna Bairi and Sundararajan Sellamanickam},
+booktitle={Proceedings of the 19th International Workshop on Mining and Learning with Graphs (MLG)},
+year={2023}
+}
+```
+
+
 ## Abstract
 
  Unsupervised node representations learnt using contrastive learning-based methods have shown good performance on downstream tasks. However, these methods rely on augmentations that mimic low-pass filters, limiting their performance on tasks requiring different eigen-spectrum parts. This paper presents a simple filter-based augmentation method to capture different parts of the eigen-spectrum. We show significant improvements using these augmentations. Further, we show that sharing the same weights across these different filter augmentations is possible, reducing the computational load. In addition, previous works have shown that good performance on downstream tasks requires high dimensional representations. Working with high dimensions increases the computations, especially when multiple augmentations are involved. We mitigate this problem and recover good performance through lower dimensional embeddings using simple random Fourier feature projections. Our method, FiGURe, achieves an average gain of up to 4.4%, compared to the state-of-the-art unsupervised models, across all datasets in consideration, both homophilic and heterophilic.
@@ -77,17 +91,3 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
-
-
-## Citation
-
-Please consider citing the following paper when using our code.
-
-```bibtex
-@inproceedings{mlg2023_15,
-title={FiGURe: Simple and Efficient Unsupervised Node Representations with Filter Augmentations},
-author={Chanakya Ekbote, Ajinkya P. Deshpande, Arun Iyer, Ramakrishna Bairi and Sundararajan Sellamanickam},
-booktitle={Proceedings of the 19th International Workshop on Mining and Learning with Graphs (MLG)},
-year={2023}
-}
-```
