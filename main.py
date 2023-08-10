@@ -29,8 +29,8 @@ parser.add_argument("--algorithm", default="mvgrl", type=str)  #
 parser.add_argument(
     "--sparse", default=False, type=lambda x: (str(x).lower() == "true")
 )  #
-parser.add_argument("--n_trials_unsup", default=5, type=int)  #
-parser.add_argument("--n_trials_sup", default=50, type=int)  #
+parser.add_argument("--n_trials_unsup", default=20, type=int)  #
+parser.add_argument("--n_trials_sup", default=60, type=int)  #
 parser.add_argument("--alpha_masks", default="-1", type=str)  #
 parser.add_argument("--lr_alphas", default=0.001, type=float)  #
 parser.add_argument("--alpha_activation", default="none", type=str)  #
@@ -39,12 +39,6 @@ parser.add_argument("--gamma", default=0, type=float)  #
 
 # get options
 options = vars(parser.parse_args())
-
-if options["algorithm"] == "dgi":
-    options["augmentation_type"] = "fsgnn"
-    options["augmentation_quantity"] = 0
-    options["augmentation_index"] = 0
-    options["augmentation_all"] = False
 
 if options["algorithm"] == "mvgrl":
     options["augmentation_type"] = "diff"
