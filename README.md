@@ -1,6 +1,6 @@
 # FiGURe: Simple and Efficient Unsupervised Node Representations with Filter Augmentations
 
-This repo contains the code for our paper submitted to NeurIPS'23 and MLG, KDD'23.
+This repo contains the code for our paper accepted at NeurIPS'23 and MLG, KDD'23.
 
 ## Citation
 
