@@ -48,7 +48,7 @@ pip install -r <os>_requirements.txt
 pip install -r linux_requirements.txt
 ```
 
-4. Download the public datasets present in an drive link:
+4. Download the public datasets present in a drive link:
 
 ```python
 python download_datasets.py
