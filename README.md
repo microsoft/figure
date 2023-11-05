@@ -7,11 +7,13 @@ This repo contains the code for our paper accepted at NeurIPS'23 and MLG, KDD'23
 Please consider citing the following paper when using our code.
 
 ```bibtex
-@inproceedings{mlg2023_15,
-title={FiGURe: Simple and Efficient Unsupervised Node Representations with Filter Augmentations},
-author={Chanakya Ekbote, Ajinkya P. Deshpande, Arun Iyer, Ramakrishna Bairi and Sundararajan Sellamanickam},
-booktitle={Proceedings of the 19th International Workshop on Mining and Learning with Graphs (MLG)},
-year={2023}
+@inproceedings{
+ekbote2023figure,
+title={Fi{GUR}e: Simple and Efficient Unsupervised Node Representations with Filter Augmentations},
+author={Chanakya Ekbote and Ajinkya Deshpande and Arun Iyer and Sundararajan Sellamanickam and Ramakrishna B Bairi},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=yh0OkiUk5h}
 }
 ```
 
