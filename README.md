@@ -9,7 +9,7 @@ Please consider citing the following paper when using our code.
 ```bibtex
 @inproceedings{
 ekbote2023figure,
-title={Fi{GUR}e: Simple and Efficient Unsupervised Node Representations with Filter Augmentations},
+title={FiGURe: Simple and Efficient Unsupervised Node Representations with Filter Augmentations},
 author={Chanakya Ekbote and Ajinkya Deshpande and Arun Iyer and Sundararajan Sellamanickam and Ramakrishna B Bairi},
 booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
 year={2023},
