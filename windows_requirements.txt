@@ -22,7 +22,7 @@ gdown==5.2.2
 # and are no longer installable. torch 2.2.1+cu121 is the newest version for
 # which dgl==2.1.0 ships a prebuilt graphbolt binary.
 --extra-index-url https://download.pytorch.org/whl/cu121
-torch==2.2.1+cu121
+torch==2.13.0
 torchvision==0.17.1+cu121
 torchaudio==2.2.1+cu121
 -f https://data.pyg.org/whl/torch-2.2.1+cu121.html
