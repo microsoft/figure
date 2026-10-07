@@ -1,18 +1,31 @@
-dgl==1.0.1
+dgl==2.1.0
 networkx==3.1
 numpy==1.24.3
-packaging==23.1
+# ray==2.56.0 requires packaging>=24.2; the original pin (23.1) conflicts with it.
+packaging==24.2
 pandas==2.0.2
+# ray.tune's OptunaSearch and checkpointing require optuna/pyarrow/pydantic,
+# but they were never declared here; without them `import main` fails.
+optuna==3.6.1
+# ray==2.56.0's ray.data module requires pyarrow>=17.0.0.
+pyarrow==17.0.0
+pydantic==2.9.2
+# dgl==2.1.0 needs the legacy torchdata.datapipes module, removed in
+# torchdata>=0.9; pin to the last release that still ships it.
+torchdata==0.7.1
 ray==2.56.0
 scipy==1.10.1
 tabulate==0.9.0
 tqdm==4.66.3
 gdown==5.2.2
---extra-index-url https://download.pytorch.org/whl/cu116
-torch==2.13.0
-torchvision==0.14.1+cu116
-torchaudio==0.13.1
--f https://data.pyg.org/whl/torch-1.13.0+cu116.html
+# Original pins (torch==2.13.0, cu116) referenced a non-existent torch release
+# and are no longer installable. torch 2.2.1+cu121 is the newest version for
+# which dgl==2.1.0 ships a prebuilt graphbolt binary.
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.2.1+cu121
+torchvision==0.17.1+cu121
+torchaudio==2.2.1+cu121
+-f https://data.pyg.org/whl/torch-2.2.1+cu121.html
 torch_geometric
 torch_scatter 
 torch_sparse 
