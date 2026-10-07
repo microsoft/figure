@@ -8,7 +8,7 @@ pandas==2.0.2
 # but they were never declared here; without them `import main` fails.
 optuna==3.6.1
 # ray==2.56.0's ray.data module requires pyarrow>=17.0.0.
-pyarrow==17.0.0
+pyarrow==23.0.1
 pydantic==2.9.2
 # dgl==2.1.0 needs the legacy torchdata.datapipes module, removed in
 # torchdata>=0.9; pin to the last release that still ships it.
